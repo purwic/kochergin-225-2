@@ -52,7 +52,6 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -62,29 +61,22 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <Label Content="Введите x₁: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="X1" Style="{StaticResource TextBox}" TextChanged="X1_TextChanged"></TextBox>
-
-
-        </StackPanel>
-        <StackPanel Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-
-            <Label Content="Введите y₁: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="Y1" Style="{StaticResource TextBox}" TextChanged="Y1_TextChanged"></TextBox>
+            <Label Content="Введите A: " Style="{StaticResource Main Text}"></Label>
+            <TextBox x:Name="A" Style="{StaticResource TextBox}" TextChanged="A_TextChanged"></TextBox>
 
 
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <Label Content="Введите x₂: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="X2" Style="{StaticResource TextBox}" TextChanged="X2_TextChanged"></TextBox>
+            <Label Content="Введите B: " Style="{StaticResource Main Text}"></Label>
+            <TextBox x:Name="B" Style="{StaticResource TextBox}" TextChanged="B_TextChanged"></TextBox>
 
 
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <Label Content="Введите y₂: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="Y2" Style="{StaticResource TextBox}" TextChanged="Y2_TextChanged"></TextBox>
+            <Label Content="Введите C: " Style="{StaticResource Main Text}"></Label>
+            <TextBox x:Name="C" Style="{StaticResource TextBox}" TextChanged="C_TextChanged"></TextBox>
 
 
         </StackPanel>
@@ -93,12 +85,12 @@
 
 
 
-        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                <Label Content="Расстояние:" Style="{StaticResource Sub Text}"></Label>
-                <Label x:Name="distance" Style="{StaticResource Main Text}">-</Label>
+                <Label Content="Кол-во квадратов со стороной C:" Style="{StaticResource Sub Text}"></Label>
+                <Label x:Name="Result" Style="{StaticResource Main Text}">-</Label>
 
             </StackPanel>
         </StackPanel>

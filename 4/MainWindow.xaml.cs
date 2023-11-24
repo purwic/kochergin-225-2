@@ -24,5 +24,52 @@ namespace _4
         {
             InitializeComponent();
         }
+
+
+        private void compute()
+        {
+
+            try
+            {
+
+                int a = int.Parse(A.Text);
+                int b = int.Parse(B.Text);
+                int c = int.Parse(C.Text);
+
+                if (a <= 0 || b <= 0 || c <= 0)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+
+
+                int m = (a - a % c) / c;
+                int n = (b - b % c) / c;
+
+                Result.Content = $"{n * m}";
+
+            }
+
+            catch
+            {
+                Result.Content = "-";
+            }
+
+        }
+
+
+        private void A_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            compute();
+        }
+
+        private void B_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            compute();
+        }
+
+        private void C_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            compute();
+        }
     }
 }

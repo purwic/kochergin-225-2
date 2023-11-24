@@ -51,40 +51,15 @@
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <Label Content="Введите x₁: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="X1" Style="{StaticResource TextBox}" TextChanged="X1_TextChanged"></TextBox>
-
-
-        </StackPanel>
-        <StackPanel Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-
-            <Label Content="Введите y₁: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="Y1" Style="{StaticResource TextBox}" TextChanged="Y1_TextChanged"></TextBox>
-
-
-        </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-
-            <Label Content="Введите x₂: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="X2" Style="{StaticResource TextBox}" TextChanged="X2_TextChanged"></TextBox>
-
-
-        </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-
-            <Label Content="Введите y₂: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="Y2" Style="{StaticResource TextBox}" TextChanged="Y2_TextChanged"></TextBox>
+            <Label Content="Введите год:" Style="{StaticResource Main Text}"></Label>
+            <TextBox x:Name="Year" Style="{StaticResource TextBox}" TextChanged="Year_TextChanged"></TextBox>
 
 
         </StackPanel>
@@ -97,8 +72,8 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                <Label Content="Расстояние:" Style="{StaticResource Sub Text}"></Label>
-                <Label x:Name="distance" Style="{StaticResource Main Text}">-</Label>
+                <Label Content="Столетие:" Style="{StaticResource Sub Text}"></Label>
+                <Label x:Name="Century" Style="{StaticResource Main Text}">-</Label>
 
             </StackPanel>
         </StackPanel>

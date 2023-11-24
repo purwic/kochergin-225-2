@@ -24,5 +24,36 @@ namespace _5
         {
             InitializeComponent();
         }
+
+        private int f(int n)
+        {
+            int k = (n - 1 - (n - 1) % 100) / 100;
+
+            return 1 + k;
+        }
+
+        private void Year_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                int year = int.Parse(Year.Text);
+
+                // в условии целое положительное, тоесть больше нуля
+                if (year <= 0)
+                {
+                    throw new IndexOutOfRangeException();
+                }
+
+                int century = f(year);
+
+                Century.Content = $"{century}";
+            }
+
+            catch
+            {
+                Century.Content = "-";
+            }
+
+        }
     }
 }

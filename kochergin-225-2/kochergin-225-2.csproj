@@ -102,7 +102,7 @@
     <Resource Include="Icons\5.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Задание 1\" />
+    <Folder Include="это задание 1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,7 +36,14 @@
         <Style x:Key="Attention Text" TargetType="Label" BasedOn="{StaticResource Text}">
             <Setter Property="Foreground" Value="#fff6a5"/>
         </Style>
-
+		
+        <Style x:Key="TextBox" TargetType="TextBox" BasedOn="{StaticResource Graphic Element}">
+            <Setter Property="BorderBrush" Value="#243238"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="#243238"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
 
 
     </Window.Resources>
@@ -56,13 +63,7 @@
         <StackPanel Grid.Row="0" Grid.RowSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
             <Label Content="Введите двухзначное число: " Style="{StaticResource Main Text}"></Label>
-            <TextBox x:Name="Number"
-                     BorderThickness="1"
-                     Width="100" BorderBrush="Изменить"
-                     Style="{StaticResource Graphic Element}" 
-                     TextAlignment="Center" 
-                     TextChanged="Number_TextChanged"
-                     MaxLength="2"></TextBox>
+            <TextBox x:Name="Number" Style="{StaticResource TextBox}" TextChanged="Number_TextChanged" MaxLength="2"></TextBox>
 
 
         </StackPanel>

@@ -24,5 +24,22 @@ namespace _2
         {
             InitializeComponent();
         }
+
+        private void Number_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                int seconds = int.Parse($"{Math.Floor(double.Parse(Seconds.Text))}");
+
+                int hours = (seconds - seconds % 3600) / 3600;
+
+                Hours.Content = $"{hours}";
+            }
+
+            catch
+            {
+                Hours.Content = "-";
+            }
+        }
     }
 }

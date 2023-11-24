@@ -81,7 +81,7 @@ namespace _3
 
             catch (ArgumentOutOfRangeException)
             {
-                DayOfWeek.Content = "K вне возм. знач.";
+                DayOfWeek.Content = "- (K вне возм. знач.)";
             }
 
             catch

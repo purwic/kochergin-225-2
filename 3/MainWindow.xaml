@@ -74,7 +74,7 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                <Label Content="Номер как дня недели:" Style="{StaticResource Sub Text}"></Label>
+                <Label Content="Его номер как дня недели:" Style="{StaticResource Sub Text}"></Label>
                 <Label x:Name="DayOfWeek" Style="{StaticResource Main Text}">-</Label>
 
             </StackPanel>
